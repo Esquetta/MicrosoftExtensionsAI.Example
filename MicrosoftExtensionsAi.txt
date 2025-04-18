@@ -1,0 +1,32 @@
+﻿--Microsoft.Extensions.AI Kütüphanesi Nedir?
+
+Microsoft.Extensions.AI; .NET uygulamalarında LLM’lerin karmaşıklığını uygulamadan soyutlayarak çalıştırmak ve yönetmek için Semantic Kernel üzerine inşa edilerek geliştirilmiş bir kütüphanedir. Bu kütüphane sayesinde LLM destekli uygulama geliştiricileri, uygulama koduna radikal müdahalelerde bulunmaksızın Ollama, Azure veya OpenAI gibi LLM sağlayıcıları arasında rahatlıkla geçişler yapabilmekte ve bir yandan da tüm bu süreçteki yapılandırma maliyetlerini minimize edebilmektedir.
+
+Bir başka deyişle, Microsoft.Extensions.AI, belirli bir LLM sağlayıcısına özgü API’ler sunmak yerine, farklı sağlayıcıların ortak temel kavramlara bağlı olarak uygulanabileceği soyutlamalar sunarak geliştiricilerin yapay zeka servisleriyle sorunsuz entegrasyon yapabilmesini sağlamaktadır.
+
+Microsoft.Extensions.AI ile pratikte, .NET uygulamalarına AI/ML modellerini geliştirici dostu API imkanı sayesinde basit ve oldukça anlaşılır bir şekilde kolayca entegre edebilir ve verimli çalışmalar için optimizasyon imkanı sağlayabiliriz. Bu doğrultuda; metin ve duygu analizi, dil çevirisi gibi NLP görevlerini yapabileceğimiz gibi nesne tanıma, yüz tanıma ya da görüntü sınıflandırma gibi görüntü işleme süreçlerini de rahatlıkla yürütebiliriz. Ayrıca tahminleme görevleri veya öneri sistemleri de oluşturarak uygulamalarımızın kalitesini destekleyecek çalışmalar gerçekleştirebiliriz.
+
+--Microsoft.Extensions.AI Kütüphanesinin Semantic Kernel’dan Farkı Nedir?
+
+-Microsoft.Extensions.AI
+
+.NET uygulamaları için standart yapay zeka soyutlamaları sağlayan bir kütüphanedir. OpenAI, Azure AI Inference, Ollama vs. gibi farklı AI servislerine erişimi standart bir arayüzle yönetmeyi hedeflemektedir. Bu açıdan değerlendirdiğimizde daha çok altyapı seviyesinde bir kütüphane olduğunu söyleyebilir ve AI servislerine doğrudan entegrasyonu kolaylaştırdığını düşünebiliriz.
+-Amacı
+.NET uygulamalarına AI/ML modellerini entegre etmek için temel altyapı ve araçlar sağlamaktır.
+-Odak Noktası
+AI/ML modellerinin .NET ortamında çalıştırılmasını, optimizasyonunu ve yönetimini sağlamaktır.
+-Kullanım Senaryoları
+Model performansını optimize etmek, AI/ML modelleriyle çalışabilmek için geliştirici dostu API’ler sunarak entegrasyon süreçlerini standartlaştırmak vs.
+
+--Semantic Kernel
+
+Yapay zeka modellerini programlama mantığıyla birleştirmeye odaklanan bir AI orkestrasyon aracı olduğunu düşünebiliriz. Planlama, bellek yönetimi ve bağlamsal iş akışları(contextual workflows) gibi ek yetenekler eşliğinde, AI modellerini klasik kodlama paradigmalarıyla birleştirmeyi kolaylaştırır.
+-Amacı
+Uygulamanın büyük dil modelleri (LLM) ve AI servisleriyle etkileşim kurmasını sağlamaktır.
+-Odak Noktası
+OpenAI GPT, Azure OpenAI vs. gibi AI servisleri ile uygulama arasında iş mantığı seviyesinde davranışları gerçekleştirmek ve AI iş akışlarını uygulamanın gereksinimi doğrultusunda yapılandırıp, yönetmektir.
+-Kullanım Senaryoları
+Büyük dil modelleriyle uygulama etkileşimini kurmak, pluginler aracılığıyla AI yeteneklerini uygulamanın davranışları ve gereksinimlerine uygun olacak şekilde özelleştirmek ya da genişletmek vs.
+
+
+Anlayacağınız; Microsoft.Extensions.AI, .NET uygulamalarına yapay zeka servislerinin uygulama tarafından yapılandırılmasını kolaylaştırmakta ve bunun için bir context yönetimi ve dependency injection yapısı gibi entegrasyon kolaylığı sağlamaktadır. Semantic Kernel ise AI modellerini programatik olarak kullanmayı kolaylaştırarak kod seviyesinde yapay zeka ile uygulamanın gereksinimlerine göre etkileşim sağlamakta ve kullanıcı deneyimiyle ilişkili süreçlere yapay zekanın niteliklerini entegre etmemize imkan tanımaktadır.
